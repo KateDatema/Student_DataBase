@@ -1,0 +1,6 @@
+/Users/katedatema/Projects/Student_DataBase/Student_DataBase/bin/Debug/Student_DataBase.exe
+/Users/katedatema/Projects/Student_DataBase/Student_DataBase/bin/Debug/Student_DataBase.pdb
+/Users/katedatema/Projects/Student_DataBase/Student_DataBase/obj/Debug/Student_DataBase.csprojAssemblyReference.cache
+/Users/katedatema/Projects/Student_DataBase/Student_DataBase/obj/Debug/Student_DataBase.csproj.CoreCompileInputs.cache
+/Users/katedatema/Projects/Student_DataBase/Student_DataBase/obj/Debug/Student_DataBase.exe
+/Users/katedatema/Projects/Student_DataBase/Student_DataBase/obj/Debug/Student_DataBase.pdb
