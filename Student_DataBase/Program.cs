@@ -12,7 +12,7 @@ namespace ClassMatesLab
             bool goOn = true;
             while (goOn == true)
             {
-                List<string> names = new List<string>() { "Mark Haines", "James Moulton", "Andrew Klim", "Tommy Waalkes", "Maggie Tamanini", "Jerome Brown", "Trent", "Troy Vizina", "Kevin Jackson II", "Joshua Carolin", "Sean Boatman", "Kate Datema" };
+                List<string> names = new List<string>() { "mark haines", "james moulton", "andrew klim", "tommy waalkes", "maggie tamanini", "jerome brown", "trent", "troy Vizina", "kevin jackson II", "joshua carolin", "sean boatman", "kate datema" };
                 List<string> foods = new List<string>() { "Cilantro", "Sushi", "Sushi", "Chicken Curry", "Movie theatre Popcorn", "Italian Cuisine", "Tacos", "Broccoli", "Asian cuisine", "Nalesniki", "Meat", "Pizza" };
                 List<string> hometown = new List<string>() { "Grand Rapids", "Toledo", "Grayslake", "Raleigh NC", "Montrose, MI", "Wilwaukee, WI", "Rochester, MI", "Indian River, MI", "Detroit", "Northville, MI", "Eaton Rapids, MI", "Zeeland, MI" };
 
@@ -26,13 +26,7 @@ namespace ClassMatesLab
 
                 if (resultOfChar == true)
                 {
-                    while (input.All(c => Char.IsLetter(c) || c == ' ') == true)
-                    {
-                        Console.WriteLine("Your input has a character that we don't accepted, input numbers 0 - 11 only next time.");
-                        input = GetUserInput("please enter a number (0-11)");
-                    }
-
-                    index = int.Parse(input);
+                    index = names.FindIndex(a => a.Contains(input));
 
 
                 }
@@ -47,9 +41,18 @@ namespace ClassMatesLab
                 {
                     while (index > 11 || index < 0)
                     {
-                        Console.Write("try again, please enter a number between 0 and 11");
+                        Console.Write("please try again, please enter a number between 0 and 11");
                         Console.WriteLine( );
-                        index = int.Parse(GetUserInput("Which person would you like to learn about?"));
+                        input = GetUserInput("Which person would you like to learn about?");
+                        if (resultOfChar == true)
+                        {
+                            index = names.FindIndex(a => a.Contains(input));
+
+                        }
+                        else
+                        {
+                            index = int.Parse(input);
+                        }
                     }
 
                 }    
